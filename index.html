@@ -17,14 +17,14 @@
 
 Vue.component('CustomInput', {
 template: `
-
+<div>
 <span>輸入：</span>
 <input
-type="text"
+type=""
 :value="value"
 @input="$emit('input', $event.target.value)"
 />
-
+</div>
 `,
 props: ['value']
 })
